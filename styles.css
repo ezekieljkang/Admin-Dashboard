@@ -1,0 +1,267 @@
+@font-face {
+  font-family: 'norseBold';
+  src: url('norsebold.otf') format('opentype');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'norseBold', sans-serif;
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 1fr 4fr;
+}
+
+.sidebar-container {
+  height: 100vh;
+  background-color:#89cff0;
+  color: white;
+}
+
+.sidebar-container span {
+  vertical-align: middle;
+  padding-right: .5rem;
+}
+
+.menu-list li {
+  padding: 1rem;
+}
+
+.sidebar-header {
+  padding: 1rem;
+}
+
+.sidebar-header {
+  font-weight: 700;
+}
+
+.profile img {
+  width: 50%;
+  height: auto;
+  border-radius: 65%;
+}
+
+.right-container {
+  display: grid;
+  grid-template-rows: 1fr 6fr;
+}
+
+.header-container {
+  padding-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.header-first-row {
+  display: grid;
+  grid-template-columns: 4fr repeat(3, 1fr);
+  padding-top: 10px;
+}
+
+.search-bar {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  flex-grow: 1;
+  padding-left: 20px;
+}
+
+.search-bar form {
+  width: 100%;
+  padding: 5px;
+}
+
+.search-bar input {
+  width: 80%;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.search-bar button {
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.search-bar span {
+  align-self: center;
+}
+
+.notification-bell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name p {
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.profile02 img {
+  width: 65%;
+  height: auto;
+  border-radius: 65%;
+}
+
+.header-second-row {
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr;
+}
+
+.profile02 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  gap: 20px;
+}
+
+.menu button {
+  border-radius: 20px;
+  width: 25%;
+  height: 40%;
+  text-align: center;
+  background-color: #89cff0;
+  font-size: 18px;
+  color: white; 
+  border: none;
+}
+
+.main-content-container {
+  padding-top:  20px;
+  padding-left: 20px;
+  background-color: rgb(73, 141, 141);
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.main-content-container h2 {
+  padding: 10px;
+}
+
+.article {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.article .title {
+  padding-bottom: 10px;
+}
+
+.article .card {
+  height: 175px;
+  padding: 15px;
+  text-align: start;
+  border-radius: 15px;
+  background-color:white;
+  border-left: 10px solid orange;
+  position: relative;
+}
+
+.card-icons {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.card-icons span {
+  margin-left: 5px;
+}
+
+.right-sidebar-container {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  padding-left: 15px;
+}
+
+.side-bar-ann {
+  display: grid;
+  grid-template-rows: .5fr repeat(3, 3fr);
+}
+
+.ann-box, .trend-box {
+  border-radius: 10px;
+  background-color: white;
+}
+
+.ann-card, .trend-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 15px;
+  position: relative;
+}
+
+.ann-card:not(:last-child)::after {
+  content: '';
+  position:absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.trend-main-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+
+.trend-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  align-items: center;
+  gap: 10px;
+}
+
+.trend-card .material-symbols-outlined {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.trend-card p {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  margin-top: 0;
+}
+
+.trend-card p:nth-child(2) {
+  margin-top: 10px;
+}
